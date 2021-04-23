@@ -1,0 +1,100 @@
+.total{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:3fr 1fr 12fr 12fr 2fr ;
+	grid-template-areas:
+	"sum sum sum sum"
+	"b b b b"
+	"tex tex img1 img2"
+	"tex tex img3 img4";
+	grid-gap:10px;
+	background-color: #e1e1e1;
+	
+}
+#pri{
+	grid-area:sum;
+	
+	text-align:center;
+	font-size:45px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: #e1e1e1;
+	color: #545454;
+	
+	
+}
+#barra{
+	grid-area:b;
+
+	background-color:gray;
+	margin-left:50px;
+	margin-right:50px;
+	height:5px;
+	
+	
+}
+#seg{
+	grid-area:tex;
+	
+	margin-left:30px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	
+	
+}
+
+#ter{
+	grid-area:img1;	
+
+}
+#ter img{
+	max-width:100%;
+	min-height:100%;
+	display:block;
+	object-fit:cover;
+	
+}
+#quar{
+
+	grid-area:img2;
+	
+}
+
+#quar img{
+	max-width:100%;
+	min-height:100%;
+	display:block;
+	object-fit:cover;
+	
+	
+}
+#qui{
+
+	background-color:gray;
+	grid-area:img3;
+	
+}
+
+#qui img{
+	max-width:100%;
+	min-height:100%;
+	display:block;
+	object-fit:cover;
+	
+	
+}
+
+#ses{
+
+	grid-area:img4;
+	
+}
+
+#ses img{
+	max-width:100%;
+	min-height:100%;
+	display:block;
+	object-fit:cover;
+	
+	
+}
+
+
