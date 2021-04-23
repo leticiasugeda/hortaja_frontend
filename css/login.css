@@ -8,6 +8,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
+    color: #000000;
   }
   
   #login-error-msg {

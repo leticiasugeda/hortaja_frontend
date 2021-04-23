@@ -17,7 +17,7 @@
                 <a href="index.html"><img class="header-logo" src="./img/logo.png"></img></a>
                 <div class="menu-navegacao">
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="./sobre.html">Sobre</a></li>
                         <li><a href="./hortas.html">Hortas</a></li>
                     </ul>
@@ -41,13 +41,11 @@
                   <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p> <!-- tá dando erro para alerta de login -->
                 </div>
             <div class="formContent2">
-                <form action="" method="post" id="login-form">
-                <label for="email"><b>E-mail</b></label>
-                <input class="email" type="text" name="email" placeholder="exemplo@exemplo.com" id="username-field" required><span><img src=""></span></input>
-                <label for="password"><b>Senha</b></label>
+                <form id="login-form">
+                <input class="email" type="text" name="email" placeholder="exemplo@exemplo.com" id="email-field" required><span><img src=""></span></input>
                 <input type="password" name="password" placeholder="senha" id="password-field" required>
                 <p>Ainda não possui uma conta? <a href="cadastro.html">Cadastre-se.</a></p>
-                <input class="submitButton" type=submit value="Entrar" id="login-form-submit">
+                <input class="submitButton" type="submit" value="Entrar" id="login-form-submit">
                 
                 </form>
             </div>
@@ -56,25 +54,4 @@
         </div>
     </div>
 </body>
-
 </html>
-
-<script>
-const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
-
-if(loginButton){
-loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
-
-    if (username === "user" && password === "web_dev") {
-        alert("You have successfully logged in.");
-        location.reload();
-    } else {
-        loginErrorMsg.style.opacity = 1;
-    }
-})}
-</script>
