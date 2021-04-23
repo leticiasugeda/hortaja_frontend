@@ -24,13 +24,36 @@ border-radius: 7px;
 }
 .listaHortas {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    margin: 30px 5% 0 5%;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30px 50px auto;
+    grid-template-areas: "imagem nome"
+    "imagem endereco"
+    "imagem detalhes";
+    margin-left: 20px;
 }
 .listaHortas img {
-    max-height: 150px;
-    width: 100%;
+    max-width: 100%;
+    height: 80%;
+    grid-area: imagem;
+    position: relative;
+    border-style: groove;
+    object-fit: cover;
+
 }
-.descricaoHorta {
-    width: 100%;
+.listaHortas h2 {
+grid-area: nome;
+width: 100%;
+margin-left: 10px;
+text-align: left;
+}
+.listaHortas h3 {
+grid-area: endereco;
+margin-left: 10px;
+text-align: left;
+}
+.listaHortas p {
+grid-area: detalhes;
+margin-left: 10px;
+vertical-align: center;
+text-align: left;
 }
