@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/sobre.css">
+    <link rel="stylesheet" type="text/css" href="./css/perfil_produtor.css">
+    <script type="text/javascript" src="./js/perfil_produtor.js"></script> 
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HortaJá</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <a href="index.html"><img class="header-logo" src="./img/logo.png"></img></a>
+                <div class="menu-navegacao">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="./hortas.html">Hortas</a></li>
+                    </ul>
+                </div>
+            
+            </div>
+        </main>
+    </header>
+    <div class="conteudo">
+        <div id="inicio">Perfil - produtor</div>
+        <div id="barra"></div>
+        <div id="texto">
+            <form enctype="multipart/form-data">
+                <div>
+                    <input type="text" id="nome" placeholder="Nome da Horta"/>
+                    <br><br>
+                    <input type="text" id="CNPJ" placeholder="CNPJ"/>
+                    <br><br>
+                    <input type="email" id="email" placeholder="email"/>
+                    <br><br>
+                    <input type="text" id="end" placeholder="Endereço"/>
+                    <br><br>
+                    <input type="text" id="per" placeholder="Período de funcionamento"/>
+                    <br><br>
+                    <input type="tel" id="tel" placeholder="Telefone"/>
+                    <br><br>
+                    <textarea id="txt" placeholder="Descrição da Horta"></textarea>
+                    <br>
+                </div>
+            </form>
+
+
+        </div>
+        <div id="img1">
+            <img name="img1" class="imgadd" src="./img/adicionar.png">
+            <input type="file" name="img1" onchange="carrega(name)" />
+        </div>
+        <div id="img2">
+            <img name="img2" class="imgadd" src="./img/adicionar.png">
+            <input type="file" name="img2" onchange="carrega(name)" />
+        </div>
+        <div id="img3">
+            <img name="img3" class="imgadd" src="./img/adicionar.png">
+            <input type="file" name="img3" onchange="carrega(name)" />
+        </div>
+        <div id="img4">
+            <img name="img4" class="imgadd" src="./img/adicionar.png">
+            <input type="file" name="img4" onchange="carrega(name)" />
+        </div>
+        <div id="bt">
+            <a href="./homeLogada.html"><button>Salvar</button></a>
+        </div>
+    </div>
+
+    <script src = "https://code.jquery.com/jquery-2.1.0.js" > </script>
+
+</body>
+
+</html>
