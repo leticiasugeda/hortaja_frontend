@@ -1,0 +1,98 @@
+body{
+    background-color: #e1e1e1;
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr 12fr 12fr 12fr;
+    grid-template-areas: 
+    "tit tit tit tit tit"
+    "b b b b b"
+    "let let let img1 img2"
+    "let let let img3 img4"
+    "let let let vazio vazio";
+
+    background-color: #e1e1e1;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    
+
+
+}
+#inicio{
+    grid-area: tit;
+
+    text-align: center;
+    font-size: 45px;
+	color: #545454;
+}
+#barra{
+    grid-area: b;
+    height: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color:gray;
+}
+#texto{
+    grid-area: let;
+    margin-top: 30px;
+    text-align: center;
+}
+#nome{
+    border: 2px solid gray;
+    width: 250px;
+}
+#CNPJ{
+    border: 2px solid gray;
+    width: 250px;
+}
+#email{
+    border: 2px solid gray;
+    width: 250px;
+}
+#end{
+    border: 2px solid gray;
+    width: 250px;
+}
+#per{
+    border: 2px solid gray;
+    width: 250px;
+}
+#tel{
+    border: 2px solid gray;
+    width: 250px;
+}
+#txt{
+    border: 2px solid gray;
+    width: 250px;
+}
+#img1{
+    grid-area: img1;
+}
+#img2{
+    grid-area: img2;
+}
+.imgadd{
+
+    width:200px;
+	height:100px;
+	display:block;
+	object-fit:cover;
+}
+#img3 {
+    grid-area: img3;
+}
+#img4{
+    grid-area: img4;
+}
+#bt{
+	grid-area: vazio;
+
+}
+#bt button{
+    margin-top: 80px;
+    margin-left: 400px;
+    border-bottom-color: grey;
+    border-radius: 5px;
+    background-color: #C2D8B8;
+    color:#545454;
+}
