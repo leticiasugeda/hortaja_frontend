@@ -5,7 +5,7 @@ margin: 0 auto;
 }
 
 ul {
-padding: 0px!important;
+padding: 0px;
 }
 .menu-principal {
 width: 100%;
@@ -39,8 +39,8 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 border-bottom: 2px solid #c2d8b8;
 }
 a {
-color: #545454; 
-text-decoration:none; 
+color: #545454!important; 
+text-decoration:none!important; 
 }
 a:hover {
 color:#506b43;
@@ -48,8 +48,8 @@ text-decoration:none;
 cursor:pointer;  
 }
 .menu-navegacao {
-width: 85%;
-float: right;
+width: 85%!important;
+float: right!important;
 }
 .col-3 {
 display: grid;
@@ -117,3 +117,8 @@ color: #545454;
     font-size: 15px;
 }
 
+.perfilEditar {
+    color: #545454!important; 
+    text-decoration:none!important; 
+    font-size: 10px!important;
+}

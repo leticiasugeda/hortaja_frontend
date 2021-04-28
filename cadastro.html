@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/cadastro.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HortaJá</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <a href="index.html"><img class="header-logo" src="./img/logo.png"></img></a>
+                <div class="menu-navegacao">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="./hortas.html">Hortas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+<div class="content1">
+    <h1>Cadastro</h1>
+    <hr>
+    <span><p>Sou produtor</p>
+    <label class="switch">
+        <input type="checkbox" onchange="updateTextInput(this.value);">
+        <span class="slider round"></span>
+        <input type="text" id="textInput" value="">
+    </span>
+    <div class="cadastro">
+            <form id="cadastro-form">
+            <input class="nome" type="text" name="nome" placeholder="Nome Completo*" id="nome-field" required>
+            <input class="horta" type="text" name="horta" placeholder="Nome da Horta*" id="horta" required>
+            <input class="cnpj" type="text" name="cnpj" placeholder="CNPJ*" id="cnpj" required>
+            <input class="email-cadastro" type="text" name="email-cadastro" placeholder="exemplo@exemplo.com*" id="email-cadastro-field" required>
+            <input type="password-cadastro" name="password-cadastro" placeholder="Senha*" id="password-cadastro-field" required>
+            <input type="password-confirm" name="password-confirm" placeholder="Confirme a senha*" id="password-confirm-field" required>
+
+            <input class="submitButton" type="submit" value="Cadastrar" id="cadastro-form-submit">
+            
+            </form>
+        </div>
+</div>
+</body>
+<script>
+function updateTextInput(val) {
+    document.getElementById('textInput').value=val; 
+  }</script>
